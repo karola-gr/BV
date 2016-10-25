@@ -5,6 +5,6 @@ function [graymax,graymin, groesse,aPixel, erwartungswert, standardabweichung] =
   groesse = size(image);
   aPixel = size(image,1) * size(image,2);
   erwartungswert = sum(image(:))/aPixel;
-  standardabweichung = std2(image);
+  %standardabweichung = std2(image);
  endfunction
  
