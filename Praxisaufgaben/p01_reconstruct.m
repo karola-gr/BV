@@ -11,7 +11,7 @@ vector = reshape(image2, 1, (size(image2, 1) * size(image2, 2)));
 
 %cut out the black and white pixel
 part1 = vector(1:5000);
-part2 = vector(5201:120000);
+part2 = vector(5201:12000);
 part3 = vector(120443:end);
 
 %concatenate the parts
