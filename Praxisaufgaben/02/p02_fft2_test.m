@@ -10,6 +10,8 @@ img_fft = fft2(image);
 %display the amplitude
 figure;
 subplot(1,2,1)
+%displays the data in array C as an image that uses the full range of colors in the colormap. 
+%Each element of C specifies the color for 1 pixel of the image. 
 imagesc(100*log(1+abs(fftshift(img_fft)))); colormap(gray); 
 subplot(1,2,2)
 imagesc(100*log(1+abs(fftshift(img_myfft)))); colormap(gray); 
