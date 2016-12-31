@@ -7,7 +7,6 @@ convImage = [M,N];
 [m,n] = size(kernel);
 kernelm = floor(m/2);
 kerneln = floor(n/2);
- 
 
 rand = zeros(M+2*kernelm, N+2*kerneln);
 rand(kernelm+1:M+kernelm, kerneln+1:N+kerneln) = image(1:M,1:N); 
